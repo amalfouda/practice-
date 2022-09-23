@@ -5,7 +5,8 @@ fouda
 3
 4
 5
-dhfj
 amoola
 fouda
+int x=4,y=6;
+cout<<x+y;
 
