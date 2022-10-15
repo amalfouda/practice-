@@ -70,7 +70,7 @@ int main() {
                 c[i].setmechanical_id(m[0].get_id());
                 c[i].setmechanical_name(m[0].getname());
                 f1 = true;
-                p[i]=c[i];
+                p[count]=c[i];
                 count++;
                
             }
@@ -79,7 +79,7 @@ int main() {
             m[1].setapp(c[i].getappointment().hours, c[i].getappointment().mins);
             c[i].setmechanical_id(m[1].get_id());
             c[i].setmechanical_name(m[1].getname());
-            p[i]=c[i];
+            p[count]=c[i];
             f2 = true;
             count++;
         }
@@ -88,7 +88,7 @@ int main() {
             m[2].setapp(c[i].getappointment().hours, c[i].getappointment().mins);
             c[i].setmechanical_id(m[2].get_id());
             c[i].setmechanical_name(m[2].getname());
-            p[i]=c[i];
+            p[count]=c[i];
             f3 = true;
             count++;
             
