@@ -11,13 +11,11 @@
 
 using namespace std;
 
-vector<int>v1;
-
-void setvector(int n)
+void setvector(vector<int>&v1,int n)
 {
     v1.push_back(n);
 }
-void insertAfter(int first, int second)
+void insertAfter(vector<int>&v1,int first, int second)
 {
     for (int i=0;i<v1.size();i++)
     {
@@ -30,7 +28,7 @@ void insertAfter(int first, int second)
     }
    
 }
-void display()
+void display(vector<int>v1)
 {
     for(int i=0;i<v1.size();i++)
         cout<<v1[i]<<endl;
@@ -48,22 +46,23 @@ void display()
         }
       
         return l1;
+}
 
-    }
 int main() {
     list l2;
-    setvector(1);
-    setvector(2);
-    setvector(3);
-    setvector(2);
-    setvector(4);
-    setvector(5);
-    setvector(2);
-    setvector(1);
-    setvector(2);
-    insertAfter(2, 9);
-    
-    l2=creatlist(v1);
+    vector<int>v;
+    setvector(v,1);
+    setvector(v,2);
+    setvector(v,3);
+    setvector(v,2);
+    setvector(v,4);
+    setvector(v,5);
+    setvector(v,2);
+    setvector(v,1);
+    setvector(v,2);
+    insertAfter(v,2, 9);
+    //display(v);
+    l2=creatlist(v);
     l2.displaylist();
     cout<<"----------------"<<endl;
     l2.sum();
